@@ -1,4 +1,45 @@
 body {
   background-color: powderblue; }
 
+@font-face {
+  font-family: "Coneria Script";
+  src: url(../fonts/demo_coneriascript-webfont.woff);
+  src: url(../fonts/demo_coneriascript-webfont.woff2); }
+@supports (grid-area: auto) {
+  @media screen and (min-width: 50px) {
+    body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "Sec1 Sec2 Sec3"; }
+
+    .Sec1 {
+      grid-area: Sec1;
+      font-family: "Palatino Linotype", Serif;
+      font-size: 1em;
+      text-align: justify;
+      padding: 10px; }
+
+    .Sec1:first-letter {
+      font-size: 3em; }
+
+    .Sec2 {
+      grid-area: Sec2;
+      font-family: 'Cookie', cursive;
+      font-size: 1.4em;
+      text-align: justify;
+      padding: 10px; }
+
+    .Sec2:first-letter {
+      font-size: 2.4em; }
+
+    .Sec3 {
+      grid-area: Sec3;
+      font-family: "Coneria Script", "Brush Script MT", serif;
+      font-size: 1em;
+      text-align: justify;
+      padding: 10px; }
+
+    .Sec3:first-letter {
+      font-size: 2.4em; } } }
+
 /*# sourceMappingURL=styles.css.map */
